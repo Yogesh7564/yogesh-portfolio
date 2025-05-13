@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh H K | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <style>
+    .dark-mode {
+      background-color: #1a202c;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Yogesh H K</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+        <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 border rounded">Toggle Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="py-16 bg-white dark:bg-gray-800" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">I'm Yogesh H K, a tech enthusiast with a passion for innovation and problem-solving. Currently exploring web development and algorithms, I aim to merge creativity with technology to build impactful solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 bg-gray-50 dark:bg-gray-700" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">ShowTracker - Booking Platform</h3>
+          <p class="text-gray-600 dark:text-gray-300">A web app for booking movies, events, and sports with MySQL backend. Users can search, view, and securely book tickets.</p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Vehicle Service Management System</h3>
+          <p class="text-gray-600 dark:text-gray-300">Built using PHP, MySQL, HTML, and JS. Tracks vehicle service workflows with real-time updates. Used XAMPP for integration.</p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">DARU-Net: Burned Area Identifier</h3>
+          <p class="text-gray-600 dark:text-gray-300">Dual-path deep learning system for identifying forest burn areas using Sentinel-1 and -2 satellite data with visual analysis tools.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-white dark:bg-gray-800" data-aos="fade-up">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-2">Email: <a href="mailto:yogeshhk098@gmail.com" class="text-blue-500">yogeshhk098@gmail.com</a></p>
+      <p class="text-gray-600 dark:text-gray-300">LinkedIn: <a href="https://www.linkedin.com/in/yogesh-h-k" target="_blank" class="text-blue-500">linkedin.com/in/yogesh-h-k</a></p>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+    © 2025 Yogesh H K. All rights reserved.
+  </footer>
+
+  <script>
+    AOS.init();
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
